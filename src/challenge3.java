@@ -9,9 +9,7 @@ public class challenge3 {
 		char [] charArray = input.toCharArray();
 		// check if it's an palindrome or not
 		int needbesorted = charArray.length;
-		int i = 1;
-		while (charArray[i-1] == charArray[needbesorted-1] && i < charArray.length) {
-			i++;
+		for (int i = 1; charArray[i-1] == charArray[needbesorted-1] && i < charArray.length; i++) {
 			needbesorted--;
 		}
 		//Say if it's an palindrome or not
